@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		30125E291C8FD7630051122A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 30125E261C8FD7630051122A /* Localizable.strings */; };
+		301587FF1C91A1D600BCB4D3 /* CandidateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 301587FA1C91A1D600BCB4D3 /* CandidateView.m */; };
+		301588001C91A1D600BCB4D3 /* HandleTyping.m in Sources */ = {isa = PBXBuildFile; fileRef = 301587FC1C91A1D600BCB4D3 /* HandleTyping.m */; };
+		301588011C91A1D600BCB4D3 /* HeInputController.m in Sources */ = {isa = PBXBuildFile; fileRef = 301587FE1C91A1D600BCB4D3 /* HeInputController.m */; };
 		309C28551C8F09850094AC5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 309C284C1C8F09850094AC5F /* Assets.xcassets */; };
 		309C28571C8F09850094AC5F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 309C284F1C8F09850094AC5F /* MainMenu.xib */; };
 		309C285A1C8F09850094AC5F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 309C28531C8F09850094AC5F /* InfoPlist.strings */; };
@@ -25,6 +28,12 @@
 /* Begin PBXFileReference section */
 		30125E271C8FD7630051122A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		30125E281C8FD7630051122A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		301587F91C91A1D600BCB4D3 /* CandidateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CandidateView.h; sourceTree = "<group>"; };
+		301587FA1C91A1D600BCB4D3 /* CandidateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CandidateView.m; sourceTree = "<group>"; };
+		301587FB1C91A1D600BCB4D3 /* HandleTyping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HandleTyping.h; sourceTree = "<group>"; };
+		301587FC1C91A1D600BCB4D3 /* HandleTyping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HandleTyping.m; sourceTree = "<group>"; };
+		301587FD1C91A1D600BCB4D3 /* HeInputController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeInputController.h; sourceTree = "<group>"; };
+		301587FE1C91A1D600BCB4D3 /* HeInputController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeInputController.m; sourceTree = "<group>"; };
 		309C28271C8F07450094AC5F /* OpenHeInput.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenHeInput.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		309C284C1C8F09850094AC5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		309C28501C8F09850094AC5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
@@ -64,6 +73,19 @@
 			path = ../../HeInputLibrary/HeInputLibrary/Resource/Localizable_String;
 			sourceTree = "<group>";
 		};
+		301587F81C91A1D600BCB4D3 /* IMKClient */ = {
+			isa = PBXGroup;
+			children = (
+				301587FD1C91A1D600BCB4D3 /* HeInputController.h */,
+				301587FE1C91A1D600BCB4D3 /* HeInputController.m */,
+				301587FB1C91A1D600BCB4D3 /* HandleTyping.h */,
+				301587FC1C91A1D600BCB4D3 /* HandleTyping.m */,
+				301587F91C91A1D600BCB4D3 /* CandidateView.h */,
+				301587FA1C91A1D600BCB4D3 /* CandidateView.m */,
+			);
+			path = IMKClient;
+			sourceTree = "<group>";
+		};
 		309C281E1C8F07450094AC5F = {
 			isa = PBXGroup;
 			children = (
@@ -84,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				309C285B1C8F0A1D0094AC5F /* IMKServer */,
+				301587F81C91A1D600BCB4D3 /* IMKClient */,
 				309C284B1C8F09850094AC5F /* AppFiles */,
 				309F65C61C8FB268001EA92D /* Resource-Link */,
 				309C28BD1C8F0C0D0094AC5F /* Frameworks */,
@@ -235,6 +258,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				301588001C91A1D600BCB4D3 /* HandleTyping.m in Sources */,
+				301587FF1C91A1D600BCB4D3 /* CandidateView.m in Sources */,
+				301588011C91A1D600BCB4D3 /* HeInputController.m in Sources */,
 				309C28601C8F0A1D0094AC5F /* main.m in Sources */,
 				309C285F1C8F0A1D0094AC5F /* AppDelegate.m in Sources */,
 			);
