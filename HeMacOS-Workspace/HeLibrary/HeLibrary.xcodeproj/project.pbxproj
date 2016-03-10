@@ -1,0 +1,331 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		309C28E81C8F86620094AC5F /* ZiCiObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 309C28E31C8F86620094AC5F /* ZiCiObject.m */; };
+		309C28EA1C8F86620094AC5F /* Input_TypingState.m in Sources */ = {isa = PBXBuildFile; fileRef = 309C28E61C8F86620094AC5F /* Input_TypingState.m */; };
+		309C28F11C8F92CD0094AC5F /* ZiCiObject.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 309C28E21C8F86620094AC5F /* ZiCiObject.h */; };
+		309C28F21C8F92CD0094AC5F /* Input_TypingState.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 309C28E51C8F86620094AC5F /* Input_TypingState.h */; };
+		309C29161C8F95850094AC5F /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 309C290B1C8F95850094AC5F /* FMDatabase.m */; };
+		309C29181C8F95850094AC5F /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 309C290D1C8F95850094AC5F /* FMDatabaseAdditions.m */; };
+		309C291A1C8F95850094AC5F /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 309C290F1C8F95850094AC5F /* FMDatabasePool.m */; };
+		309C291C1C8F95850094AC5F /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 309C29111C8F95850094AC5F /* FMDatabaseQueue.m */; };
+		309C291F1C8F95850094AC5F /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 309C29141C8F95850094AC5F /* FMResultSet.m */; };
+		309C29201C8F95CD0094AC5F /* FMDatabase.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 309C290A1C8F95850094AC5F /* FMDatabase.h */; };
+		309C29211C8F970B0094AC5F /* FMResultSet.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 309C29131C8F95850094AC5F /* FMResultSet.h */; };
+		309C29221C8F972F0094AC5F /* FMDatabasePool.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 309C290E1C8F95850094AC5F /* FMDatabasePool.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		309C28F01C8F92800094AC5F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+				309C29221C8F972F0094AC5F /* FMDatabasePool.h in CopyFiles */,
+				309C29211C8F970B0094AC5F /* FMResultSet.h in CopyFiles */,
+				309C29201C8F95CD0094AC5F /* FMDatabase.h in CopyFiles */,
+				309C28F11C8F92CD0094AC5F /* ZiCiObject.h in CopyFiles */,
+				309C28F21C8F92CD0094AC5F /* Input_TypingState.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		309C28D51C8F833B0094AC5F /* libHeLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libHeLibrary.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		309C28E21C8F86620094AC5F /* ZiCiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZiCiObject.h; sourceTree = "<group>"; };
+		309C28E31C8F86620094AC5F /* ZiCiObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZiCiObject.m; sourceTree = "<group>"; };
+		309C28E51C8F86620094AC5F /* Input_TypingState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Input_TypingState.h; sourceTree = "<group>"; };
+		309C28E61C8F86620094AC5F /* Input_TypingState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Input_TypingState.m; sourceTree = "<group>"; };
+		309C290A1C8F95850094AC5F /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		309C290B1C8F95850094AC5F /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		309C290C1C8F95850094AC5F /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		309C290D1C8F95850094AC5F /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		309C290E1C8F95850094AC5F /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		309C290F1C8F95850094AC5F /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		309C29101C8F95850094AC5F /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		309C29111C8F95850094AC5F /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		309C29121C8F95850094AC5F /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		309C29131C8F95850094AC5F /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		309C29141C8F95850094AC5F /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		309C28D21C8F833B0094AC5F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		309C28CC1C8F833B0094AC5F = {
+			isa = PBXGroup;
+			children = (
+				309C28D71C8F833B0094AC5F /* HeLibrary */,
+				309C29081C8F95850094AC5F /* Third-Party */,
+				309C28D61C8F833B0094AC5F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		309C28D61C8F833B0094AC5F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				309C28D51C8F833B0094AC5F /* libHeLibrary.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		309C28D71C8F833B0094AC5F /* HeLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				309C28E11C8F86620094AC5F /* HeBase */,
+				309C28E41C8F86620094AC5F /* HeInput */,
+			);
+			path = HeLibrary;
+			sourceTree = "<group>";
+		};
+		309C28E11C8F86620094AC5F /* HeBase */ = {
+			isa = PBXGroup;
+			children = (
+				309C28E21C8F86620094AC5F /* ZiCiObject.h */,
+				309C28E31C8F86620094AC5F /* ZiCiObject.m */,
+			);
+			path = HeBase;
+			sourceTree = "<group>";
+		};
+		309C28E41C8F86620094AC5F /* HeInput */ = {
+			isa = PBXGroup;
+			children = (
+				309C28E51C8F86620094AC5F /* Input_TypingState.h */,
+				309C28E61C8F86620094AC5F /* Input_TypingState.m */,
+			);
+			path = HeInput;
+			sourceTree = "<group>";
+		};
+		309C29081C8F95850094AC5F /* Third-Party */ = {
+			isa = PBXGroup;
+			children = (
+				309C29091C8F95850094AC5F /* SQLite-FMDB */,
+			);
+			path = "Third-Party";
+			sourceTree = "<group>";
+		};
+		309C29091C8F95850094AC5F /* SQLite-FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				309C290A1C8F95850094AC5F /* FMDatabase.h */,
+				309C290B1C8F95850094AC5F /* FMDatabase.m */,
+				309C290C1C8F95850094AC5F /* FMDatabaseAdditions.h */,
+				309C290D1C8F95850094AC5F /* FMDatabaseAdditions.m */,
+				309C290E1C8F95850094AC5F /* FMDatabasePool.h */,
+				309C290F1C8F95850094AC5F /* FMDatabasePool.m */,
+				309C29101C8F95850094AC5F /* FMDatabaseQueue.h */,
+				309C29111C8F95850094AC5F /* FMDatabaseQueue.m */,
+				309C29121C8F95850094AC5F /* FMDB.h */,
+				309C29131C8F95850094AC5F /* FMResultSet.h */,
+				309C29141C8F95850094AC5F /* FMResultSet.m */,
+			);
+			path = "SQLite-FMDB";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		309C28D41C8F833B0094AC5F /* HeLibrary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 309C28DE1C8F833B0094AC5F /* Build configuration list for PBXNativeTarget "HeLibrary" */;
+			buildPhases = (
+				309C28D11C8F833B0094AC5F /* Sources */,
+				309C28D21C8F833B0094AC5F /* Frameworks */,
+				309C28F01C8F92800094AC5F /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HeLibrary;
+			productName = HeLibrary;
+			productReference = 309C28D51C8F833B0094AC5F /* libHeLibrary.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		309C28CD1C8F833B0094AC5F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Guilin Ouyang";
+				TargetAttributes = {
+					309C28D41C8F833B0094AC5F = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 309C28D01C8F833B0094AC5F /* Build configuration list for PBXProject "HeLibrary" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 309C28CC1C8F833B0094AC5F;
+			productRefGroup = 309C28D61C8F833B0094AC5F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				309C28D41C8F833B0094AC5F /* HeLibrary */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		309C28D11C8F833B0094AC5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				309C29161C8F95850094AC5F /* FMDatabase.m in Sources */,
+				309C28EA1C8F86620094AC5F /* Input_TypingState.m in Sources */,
+				309C291F1C8F95850094AC5F /* FMResultSet.m in Sources */,
+				309C291A1C8F95850094AC5F /* FMDatabasePool.m in Sources */,
+				309C28E81C8F86620094AC5F /* ZiCiObject.m in Sources */,
+				309C29181C8F95850094AC5F /* FMDatabaseAdditions.m in Sources */,
+				309C291C1C8F95850094AC5F /* FMDatabaseQueue.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		309C28DC1C8F833B0094AC5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		309C28DD1C8F833B0094AC5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		309C28DF1C8F833B0094AC5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		309C28E01C8F833B0094AC5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		309C28D01C8F833B0094AC5F /* Build configuration list for PBXProject "HeLibrary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				309C28DC1C8F833B0094AC5F /* Debug */,
+				309C28DD1C8F833B0094AC5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		309C28DE1C8F833B0094AC5F /* Build configuration list for PBXNativeTarget "HeLibrary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				309C28DF1C8F833B0094AC5F /* Debug */,
+				309C28E01C8F833B0094AC5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 309C28CD1C8F833B0094AC5F /* Project object */;
+}

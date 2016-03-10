@@ -1,0 +1,448 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		30125E211C8FD6F40051122A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 30125E231C8FD6F40051122A /* Localizable.strings */; };
+		309C29491C8F9C8A0094AC5F /* Globel_Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 309C292C1C8F9C8A0094AC5F /* Globel_Helper.m */; };
+		309C294C1C8F9C8A0094AC5F /* Input_DataServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 309C292F1C8F9C8A0094AC5F /* Input_DataServer.m */; };
+		309C294E1C8F9C8A0094AC5F /* Input_Setting.m in Sources */ = {isa = PBXBuildFile; fileRef = 309C29311C8F9C8A0094AC5F /* Input_Setting.m */; };
+		309C29511C8F9C8A0094AC5F /* EngineBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 309C29351C8F9C8A0094AC5F /* EngineBase.m */; };
+		309C29531C8F9C8A0094AC5F /* EngineCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 309C29371C8F9C8A0094AC5F /* EngineCollection.m */; };
+		309C29551C8F9C8A0094AC5F /* HeEnglishEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 309C29391C8F9C8A0094AC5F /* HeEnglishEngine.m */; };
+		309C29571C8F9C8A0094AC5F /* HeMaEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 309C293B1C8F9C8A0094AC5F /* HeMaEngine.m */; };
+		309C29591C8F9C8A0094AC5F /* MenuEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 309C293D1C8F9C8A0094AC5F /* MenuEngine.m */; };
+		309C295B1C8F9C8A0094AC5F /* PinYinEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 309C293F1C8F9C8A0094AC5F /* PinYinEngine.m */; };
+		309C295D1C8F9C8A0094AC5F /* SymbolEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 309C29411C8F9C8A0094AC5F /* SymbolEngine.m */; };
+		309C296B1C8F9CD60094AC5F /* libHeLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 309C296A1C8F9CD60094AC5F /* libHeLibrary.a */; };
+		309C296D1C8F9E1A0094AC5F /* Globel_Helper.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 309C292B1C8F9C8A0094AC5F /* Globel_Helper.h */; };
+		309C296E1C8F9E1A0094AC5F /* Input_Constants.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 309C292D1C8F9C8A0094AC5F /* Input_Constants.h */; };
+		309C296F1C8F9E1A0094AC5F /* Input_DataServer.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 309C292E1C8F9C8A0094AC5F /* Input_DataServer.h */; };
+		309C29701C8F9E1A0094AC5F /* Input_Setting.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 309C29301C8F9C8A0094AC5F /* Input_Setting.h */; };
+		309C29711C8F9E1A0094AC5F /* MacOS_VirtualKeyCode.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 309C29321C8F9C8A0094AC5F /* MacOS_VirtualKeyCode.h */; };
+		309C29721C8F9E1B0094AC5F /* EngineCollection.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 309C29361C8F9C8A0094AC5F /* EngineCollection.h */; };
+		309C298D1C8FA2300094AC5F /* HeEnglishEngine.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 309C29381C8F9C8A0094AC5F /* HeEnglishEngine.h */; };
+		309C298E1C8FA2300094AC5F /* HeMaEngine.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 309C293A1C8F9C8A0094AC5F /* HeMaEngine.h */; };
+		309C298F1C8FA25F0094AC5F /* EngineBase.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 309C29341C8F9C8A0094AC5F /* EngineBase.h */; };
+		309C29901C8FA25F0094AC5F /* MenuEngine.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 309C293C1C8F9C8A0094AC5F /* MenuEngine.h */; };
+		309C29911C8FA25F0094AC5F /* PinYinEngine.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 309C293E1C8F9C8A0094AC5F /* PinYinEngine.h */; };
+		309C29921C8FA25F0094AC5F /* SymbolEngine.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 309C29401C8F9C8A0094AC5F /* SymbolEngine.h */; };
+		309F65B71C8FB086001EA92D /* hema_db.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 309F65AC1C8FB06A001EA92D /* hema_db.sqlite */; };
+		309F65B81C8FB086001EA92D /* FanTi.tif in Resources */ = {isa = PBXBuildFile; fileRef = 309F65AF1C8FB06A001EA92D /* FanTi.tif */; };
+		309F65B91C8FB086001EA92D /* HeEnglish.tif in Resources */ = {isa = PBXBuildFile; fileRef = 309F65B11C8FB06A001EA92D /* HeEnglish.tif */; };
+		309F65BA1C8FB086001EA92D /* JianTi.tif in Resources */ = {isa = PBXBuildFile; fileRef = 309F65B21C8FB06A001EA92D /* JianTi.tif */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		309C296C1C8F9DA10094AC5F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+				309C298F1C8FA25F0094AC5F /* EngineBase.h in CopyFiles */,
+				309C29901C8FA25F0094AC5F /* MenuEngine.h in CopyFiles */,
+				309C29911C8FA25F0094AC5F /* PinYinEngine.h in CopyFiles */,
+				309C29921C8FA25F0094AC5F /* SymbolEngine.h in CopyFiles */,
+				309C298D1C8FA2300094AC5F /* HeEnglishEngine.h in CopyFiles */,
+				309C298E1C8FA2300094AC5F /* HeMaEngine.h in CopyFiles */,
+				309C296D1C8F9E1A0094AC5F /* Globel_Helper.h in CopyFiles */,
+				309C296E1C8F9E1A0094AC5F /* Input_Constants.h in CopyFiles */,
+				309C296F1C8F9E1A0094AC5F /* Input_DataServer.h in CopyFiles */,
+				309C29701C8F9E1A0094AC5F /* Input_Setting.h in CopyFiles */,
+				309C29711C8F9E1A0094AC5F /* MacOS_VirtualKeyCode.h in CopyFiles */,
+				309C29721C8F9E1B0094AC5F /* EngineCollection.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		30125E221C8FD6F40051122A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		30125E241C8FD6F80051122A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		309C28FC1C8F94340094AC5F /* libHeInputLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libHeInputLibrary.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		309C292B1C8F9C8A0094AC5F /* Globel_Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Globel_Helper.h; sourceTree = "<group>"; };
+		309C292C1C8F9C8A0094AC5F /* Globel_Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Globel_Helper.m; sourceTree = "<group>"; };
+		309C292D1C8F9C8A0094AC5F /* Input_Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Input_Constants.h; sourceTree = "<group>"; };
+		309C292E1C8F9C8A0094AC5F /* Input_DataServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Input_DataServer.h; sourceTree = "<group>"; };
+		309C292F1C8F9C8A0094AC5F /* Input_DataServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Input_DataServer.m; sourceTree = "<group>"; };
+		309C29301C8F9C8A0094AC5F /* Input_Setting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Input_Setting.h; sourceTree = "<group>"; };
+		309C29311C8F9C8A0094AC5F /* Input_Setting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Input_Setting.m; sourceTree = "<group>"; };
+		309C29321C8F9C8A0094AC5F /* MacOS_VirtualKeyCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacOS_VirtualKeyCode.h; sourceTree = "<group>"; };
+		309C29341C8F9C8A0094AC5F /* EngineBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EngineBase.h; sourceTree = "<group>"; };
+		309C29351C8F9C8A0094AC5F /* EngineBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EngineBase.m; sourceTree = "<group>"; };
+		309C29361C8F9C8A0094AC5F /* EngineCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EngineCollection.h; sourceTree = "<group>"; };
+		309C29371C8F9C8A0094AC5F /* EngineCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EngineCollection.m; sourceTree = "<group>"; };
+		309C29381C8F9C8A0094AC5F /* HeEnglishEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeEnglishEngine.h; sourceTree = "<group>"; };
+		309C29391C8F9C8A0094AC5F /* HeEnglishEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeEnglishEngine.m; sourceTree = "<group>"; };
+		309C293A1C8F9C8A0094AC5F /* HeMaEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeMaEngine.h; sourceTree = "<group>"; };
+		309C293B1C8F9C8A0094AC5F /* HeMaEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeMaEngine.m; sourceTree = "<group>"; };
+		309C293C1C8F9C8A0094AC5F /* MenuEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuEngine.h; sourceTree = "<group>"; };
+		309C293D1C8F9C8A0094AC5F /* MenuEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuEngine.m; sourceTree = "<group>"; };
+		309C293E1C8F9C8A0094AC5F /* PinYinEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinYinEngine.h; sourceTree = "<group>"; };
+		309C293F1C8F9C8A0094AC5F /* PinYinEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PinYinEngine.m; sourceTree = "<group>"; };
+		309C29401C8F9C8A0094AC5F /* SymbolEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SymbolEngine.h; sourceTree = "<group>"; };
+		309C29411C8F9C8A0094AC5F /* SymbolEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SymbolEngine.m; sourceTree = "<group>"; };
+		309C296A1C8F9CD60094AC5F /* libHeLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libHeLibrary.a; path = "/Users/Ouyang/Library/Developer/Xcode/DerivedData/HeMacOS-cuozerukpaqbpghhoyjqizbnxhry/Build/Products/Debug/libHeLibrary.a"; sourceTree = "<absolute>"; };
+		309F65AC1C8FB06A001EA92D /* hema_db.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = hema_db.sqlite; sourceTree = "<group>"; };
+		309F65AE1C8FB06A001EA92D /* English.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = English.tif; sourceTree = "<group>"; };
+		309F65AF1C8FB06A001EA92D /* FanTi.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = FanTi.tif; sourceTree = "<group>"; };
+		309F65B01C8FB06A001EA92D /* He.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = He.tif; sourceTree = "<group>"; };
+		309F65B11C8FB06A001EA92D /* HeEnglish.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = HeEnglish.tif; sourceTree = "<group>"; };
+		309F65B21C8FB06A001EA92D /* JianTi.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = JianTi.tif; sourceTree = "<group>"; };
+		309F65B31C8FB06A001EA92D /* Number.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Number.tif; sourceTree = "<group>"; };
+		309F65B41C8FB06A001EA92D /* PinYin.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = PinYin.tif; sourceTree = "<group>"; };
+		309F65B51C8FB06A001EA92D /* ZiXing.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = ZiXing.tif; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		309C28F91C8F94340094AC5F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				309C296B1C8F9CD60094AC5F /* libHeLibrary.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		30125E081C8FD4860051122A /* Localizable_String */ = {
+			isa = PBXGroup;
+			children = (
+				30125E231C8FD6F40051122A /* Localizable.strings */,
+			);
+			path = Localizable_String;
+			sourceTree = "<group>";
+		};
+		309C28F31C8F94340094AC5F = {
+			isa = PBXGroup;
+			children = (
+				309C28FE1C8F94340094AC5F /* HeInputLibrary */,
+				309C28FD1C8F94340094AC5F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		309C28FD1C8F94340094AC5F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				309C28FC1C8F94340094AC5F /* libHeInputLibrary.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		309C28FE1C8F94340094AC5F /* HeInputLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				309F65AA1C8FB06A001EA92D /* Resource */,
+				309C292A1C8F9C8A0094AC5F /* Input_Base */,
+				309C29331C8F9C8A0094AC5F /* InputEngine */,
+				309F659C1C8FADFA001EA92D /* Framework */,
+			);
+			path = HeInputLibrary;
+			sourceTree = "<group>";
+		};
+		309C292A1C8F9C8A0094AC5F /* Input_Base */ = {
+			isa = PBXGroup;
+			children = (
+				309C292B1C8F9C8A0094AC5F /* Globel_Helper.h */,
+				309C292C1C8F9C8A0094AC5F /* Globel_Helper.m */,
+				309C292D1C8F9C8A0094AC5F /* Input_Constants.h */,
+				309C292E1C8F9C8A0094AC5F /* Input_DataServer.h */,
+				309C292F1C8F9C8A0094AC5F /* Input_DataServer.m */,
+				309C29301C8F9C8A0094AC5F /* Input_Setting.h */,
+				309C29311C8F9C8A0094AC5F /* Input_Setting.m */,
+				309C29321C8F9C8A0094AC5F /* MacOS_VirtualKeyCode.h */,
+			);
+			path = Input_Base;
+			sourceTree = "<group>";
+		};
+		309C29331C8F9C8A0094AC5F /* InputEngine */ = {
+			isa = PBXGroup;
+			children = (
+				309C29341C8F9C8A0094AC5F /* EngineBase.h */,
+				309C29351C8F9C8A0094AC5F /* EngineBase.m */,
+				309C29361C8F9C8A0094AC5F /* EngineCollection.h */,
+				309C29371C8F9C8A0094AC5F /* EngineCollection.m */,
+				309C29381C8F9C8A0094AC5F /* HeEnglishEngine.h */,
+				309C29391C8F9C8A0094AC5F /* HeEnglishEngine.m */,
+				309C293A1C8F9C8A0094AC5F /* HeMaEngine.h */,
+				309C293B1C8F9C8A0094AC5F /* HeMaEngine.m */,
+				309C293C1C8F9C8A0094AC5F /* MenuEngine.h */,
+				309C293D1C8F9C8A0094AC5F /* MenuEngine.m */,
+				309C293E1C8F9C8A0094AC5F /* PinYinEngine.h */,
+				309C293F1C8F9C8A0094AC5F /* PinYinEngine.m */,
+				309C29401C8F9C8A0094AC5F /* SymbolEngine.h */,
+				309C29411C8F9C8A0094AC5F /* SymbolEngine.m */,
+			);
+			path = InputEngine;
+			sourceTree = "<group>";
+		};
+		309F659C1C8FADFA001EA92D /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				309C296A1C8F9CD60094AC5F /* libHeLibrary.a */,
+			);
+			name = Framework;
+			sourceTree = "<group>";
+		};
+		309F65AA1C8FB06A001EA92D /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				30125E081C8FD4860051122A /* Localizable_String */,
+				309F65AB1C8FB06A001EA92D /* Database */,
+				309F65AD1C8FB06A001EA92D /* Image */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		309F65AB1C8FB06A001EA92D /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				309F65AC1C8FB06A001EA92D /* hema_db.sqlite */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		309F65AD1C8FB06A001EA92D /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				309F65AE1C8FB06A001EA92D /* English.tif */,
+				309F65AF1C8FB06A001EA92D /* FanTi.tif */,
+				309F65B01C8FB06A001EA92D /* He.tif */,
+				309F65B11C8FB06A001EA92D /* HeEnglish.tif */,
+				309F65B21C8FB06A001EA92D /* JianTi.tif */,
+				309F65B31C8FB06A001EA92D /* Number.tif */,
+				309F65B41C8FB06A001EA92D /* PinYin.tif */,
+				309F65B51C8FB06A001EA92D /* ZiXing.tif */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		309C28FB1C8F94340094AC5F /* HeInputLibrary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 309C29051C8F94340094AC5F /* Build configuration list for PBXNativeTarget "HeInputLibrary" */;
+			buildPhases = (
+				309C28F81C8F94340094AC5F /* Sources */,
+				309C28F91C8F94340094AC5F /* Frameworks */,
+				309C296C1C8F9DA10094AC5F /* CopyFiles */,
+				309F65B61C8FB076001EA92D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HeInputLibrary;
+			productName = HeInputLibrary;
+			productReference = 309C28FC1C8F94340094AC5F /* libHeInputLibrary.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		309C28F41C8F94340094AC5F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Guilin Ouyang";
+				TargetAttributes = {
+					309C28FB1C8F94340094AC5F = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 309C28F71C8F94340094AC5F /* Build configuration list for PBXProject "HeInputLibrary" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				"zh-Hans",
+			);
+			mainGroup = 309C28F31C8F94340094AC5F;
+			productRefGroup = 309C28FD1C8F94340094AC5F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				309C28FB1C8F94340094AC5F /* HeInputLibrary */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		309F65B61C8FB076001EA92D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30125E211C8FD6F40051122A /* Localizable.strings in Resources */,
+				309F65B71C8FB086001EA92D /* hema_db.sqlite in Resources */,
+				309F65B81C8FB086001EA92D /* FanTi.tif in Resources */,
+				309F65B91C8FB086001EA92D /* HeEnglish.tif in Resources */,
+				309F65BA1C8FB086001EA92D /* JianTi.tif in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		309C28F81C8F94340094AC5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				309C29511C8F9C8A0094AC5F /* EngineBase.m in Sources */,
+				309C29491C8F9C8A0094AC5F /* Globel_Helper.m in Sources */,
+				309C294C1C8F9C8A0094AC5F /* Input_DataServer.m in Sources */,
+				309C295D1C8F9C8A0094AC5F /* SymbolEngine.m in Sources */,
+				309C29571C8F9C8A0094AC5F /* HeMaEngine.m in Sources */,
+				309C295B1C8F9C8A0094AC5F /* PinYinEngine.m in Sources */,
+				309C29531C8F9C8A0094AC5F /* EngineCollection.m in Sources */,
+				309C29591C8F9C8A0094AC5F /* MenuEngine.m in Sources */,
+				309C29551C8F9C8A0094AC5F /* HeEnglishEngine.m in Sources */,
+				309C294E1C8F9C8A0094AC5F /* Input_Setting.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		30125E231C8FD6F40051122A /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				30125E221C8FD6F40051122A /* en */,
+				30125E241C8FD6F80051122A /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		309C29031C8F94340094AC5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		309C29041C8F94340094AC5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		309C29061C8F94340094AC5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		309C29071C8F94340094AC5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		309C28F71C8F94340094AC5F /* Build configuration list for PBXProject "HeInputLibrary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				309C29031C8F94340094AC5F /* Debug */,
+				309C29041C8F94340094AC5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		309C29051C8F94340094AC5F /* Build configuration list for PBXNativeTarget "HeInputLibrary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				309C29061C8F94340094AC5F /* Debug */,
+				309C29071C8F94340094AC5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 309C28F41C8F94340094AC5F /* Project object */;
+}

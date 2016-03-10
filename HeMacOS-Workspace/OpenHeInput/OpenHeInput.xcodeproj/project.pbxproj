@@ -1,0 +1,397 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		30125E291C8FD7630051122A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 30125E261C8FD7630051122A /* Localizable.strings */; };
+		309C28551C8F09850094AC5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 309C284C1C8F09850094AC5F /* Assets.xcassets */; };
+		309C28571C8F09850094AC5F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 309C284F1C8F09850094AC5F /* MainMenu.xib */; };
+		309C285A1C8F09850094AC5F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 309C28531C8F09850094AC5F /* InfoPlist.strings */; };
+		309C285F1C8F0A1D0094AC5F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 309C285D1C8F0A1D0094AC5F /* AppDelegate.m */; };
+		309C28601C8F0A1D0094AC5F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 309C285E1C8F0A1D0094AC5F /* main.m */; };
+		309C28BC1C8F0BAD0094AC5F /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 309C28BB1C8F0BAD0094AC5F /* libsqlite3.tbd */; };
+		309C28C11C8F0DBB0094AC5F /* OpenHeInput.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 309C28C01C8F0DBB0094AC5F /* OpenHeInput.entitlements */; };
+		309F65C41C8FB232001EA92D /* libHeInputLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 309F65C31C8FB232001EA92D /* libHeInputLibrary.a */; };
+		309F65DB1C8FB2CD001EA92D /* hema_db.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 309F65D11C8FB2CD001EA92D /* hema_db.sqlite */; };
+		309F65DD1C8FB2CD001EA92D /* FanTi.tif in Resources */ = {isa = PBXBuildFile; fileRef = 309F65D41C8FB2CD001EA92D /* FanTi.tif */; };
+		309F65DF1C8FB2CD001EA92D /* HeEnglish.tif in Resources */ = {isa = PBXBuildFile; fileRef = 309F65D61C8FB2CD001EA92D /* HeEnglish.tif */; };
+		309F65E01C8FB2CD001EA92D /* JianTi.tif in Resources */ = {isa = PBXBuildFile; fileRef = 309F65D71C8FB2CD001EA92D /* JianTi.tif */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		30125E271C8FD7630051122A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		30125E281C8FD7630051122A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		309C28271C8F07450094AC5F /* OpenHeInput.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenHeInput.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		309C284C1C8F09850094AC5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		309C28501C8F09850094AC5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		309C28521C8F09850094AC5F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		309C28531C8F09850094AC5F /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
+		309C285C1C8F0A1D0094AC5F /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		309C285D1C8F0A1D0094AC5F /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		309C285E1C8F0A1D0094AC5F /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		309C28BB1C8F0BAD0094AC5F /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		309C28C01C8F0DBB0094AC5F /* OpenHeInput.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = OpenHeInput.entitlements; sourceTree = "<group>"; };
+		309F65C31C8FB232001EA92D /* libHeInputLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libHeInputLibrary.a; path = "/Users/Ouyang/Library/Developer/Xcode/DerivedData/HeMacOS-cuozerukpaqbpghhoyjqizbnxhry/Build/Products/Debug/libHeInputLibrary.a"; sourceTree = "<absolute>"; };
+		309F65D11C8FB2CD001EA92D /* hema_db.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = hema_db.sqlite; sourceTree = "<group>"; };
+		309F65D41C8FB2CD001EA92D /* FanTi.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = FanTi.tif; sourceTree = "<group>"; };
+		309F65D61C8FB2CD001EA92D /* HeEnglish.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = HeEnglish.tif; sourceTree = "<group>"; };
+		309F65D71C8FB2CD001EA92D /* JianTi.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = JianTi.tif; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		309C28241C8F07450094AC5F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				309F65C41C8FB232001EA92D /* libHeInputLibrary.a in Frameworks */,
+				309C28BC1C8F0BAD0094AC5F /* libsqlite3.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		30125E251C8FD7630051122A /* Localizable_String */ = {
+			isa = PBXGroup;
+			children = (
+				30125E261C8FD7630051122A /* Localizable.strings */,
+			);
+			name = Localizable_String;
+			path = ../../HeInputLibrary/HeInputLibrary/Resource/Localizable_String;
+			sourceTree = "<group>";
+		};
+		309C281E1C8F07450094AC5F = {
+			isa = PBXGroup;
+			children = (
+				309C28291C8F07450094AC5F /* OpenHeInput */,
+				309C28281C8F07450094AC5F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		309C28281C8F07450094AC5F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				309C28271C8F07450094AC5F /* OpenHeInput.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		309C28291C8F07450094AC5F /* OpenHeInput */ = {
+			isa = PBXGroup;
+			children = (
+				309C285B1C8F0A1D0094AC5F /* IMKServer */,
+				309C284B1C8F09850094AC5F /* AppFiles */,
+				309F65C61C8FB268001EA92D /* Resource-Link */,
+				309C28BD1C8F0C0D0094AC5F /* Frameworks */,
+			);
+			path = OpenHeInput;
+			sourceTree = "<group>";
+		};
+		309C284B1C8F09850094AC5F /* AppFiles */ = {
+			isa = PBXGroup;
+			children = (
+				309C28C01C8F0DBB0094AC5F /* OpenHeInput.entitlements */,
+				309C284C1C8F09850094AC5F /* Assets.xcassets */,
+				309C284F1C8F09850094AC5F /* MainMenu.xib */,
+				309C28521C8F09850094AC5F /* Info.plist */,
+				309C28531C8F09850094AC5F /* InfoPlist.strings */,
+			);
+			path = AppFiles;
+			sourceTree = "<group>";
+		};
+		309C285B1C8F0A1D0094AC5F /* IMKServer */ = {
+			isa = PBXGroup;
+			children = (
+				309C285C1C8F0A1D0094AC5F /* AppDelegate.h */,
+				309C285D1C8F0A1D0094AC5F /* AppDelegate.m */,
+				309C285E1C8F0A1D0094AC5F /* main.m */,
+			);
+			path = IMKServer;
+			sourceTree = "<group>";
+		};
+		309C28BD1C8F0C0D0094AC5F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				309F65C31C8FB232001EA92D /* libHeInputLibrary.a */,
+				309C28BB1C8F0BAD0094AC5F /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		309F65C61C8FB268001EA92D /* Resource-Link */ = {
+			isa = PBXGroup;
+			children = (
+				30125E251C8FD7630051122A /* Localizable_String */,
+				309F65D01C8FB2CD001EA92D /* Database */,
+				309F65D21C8FB2CD001EA92D /* Image */,
+			);
+			name = "Resource-Link";
+			sourceTree = "<group>";
+		};
+		309F65D01C8FB2CD001EA92D /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				309F65D11C8FB2CD001EA92D /* hema_db.sqlite */,
+			);
+			name = Database;
+			path = ../../HeInputLibrary/HeInputLibrary/Resource/Database;
+			sourceTree = "<group>";
+		};
+		309F65D21C8FB2CD001EA92D /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				309F65D41C8FB2CD001EA92D /* FanTi.tif */,
+				309F65D61C8FB2CD001EA92D /* HeEnglish.tif */,
+				309F65D71C8FB2CD001EA92D /* JianTi.tif */,
+			);
+			name = Image;
+			path = ../../HeInputLibrary/HeInputLibrary/Resource/Image;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		309C28261C8F07450094AC5F /* OpenHeInput */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 309C28381C8F07450094AC5F /* Build configuration list for PBXNativeTarget "OpenHeInput" */;
+			buildPhases = (
+				309C28231C8F07450094AC5F /* Sources */,
+				309C28241C8F07450094AC5F /* Frameworks */,
+				309C28251C8F07450094AC5F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OpenHeInput;
+			productName = OpenHeInput;
+			productReference = 309C28271C8F07450094AC5F /* OpenHeInput.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		309C281F1C8F07450094AC5F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Guilin Ouyang";
+				TargetAttributes = {
+					309C28261C8F07450094AC5F = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 8564VARA9P;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 309C28221C8F07450094AC5F /* Build configuration list for PBXProject "OpenHeInput" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = 309C281E1C8F07450094AC5F;
+			productRefGroup = 309C28281C8F07450094AC5F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				309C28261C8F07450094AC5F /* OpenHeInput */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		309C28251C8F07450094AC5F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				309C28551C8F09850094AC5F /* Assets.xcassets in Resources */,
+				309F65E01C8FB2CD001EA92D /* JianTi.tif in Resources */,
+				309C285A1C8F09850094AC5F /* InfoPlist.strings in Resources */,
+				309F65DD1C8FB2CD001EA92D /* FanTi.tif in Resources */,
+				30125E291C8FD7630051122A /* Localizable.strings in Resources */,
+				309C28571C8F09850094AC5F /* MainMenu.xib in Resources */,
+				309F65DB1C8FB2CD001EA92D /* hema_db.sqlite in Resources */,
+				309C28C11C8F0DBB0094AC5F /* OpenHeInput.entitlements in Resources */,
+				309F65DF1C8FB2CD001EA92D /* HeEnglish.tif in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		309C28231C8F07450094AC5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				309C28601C8F0A1D0094AC5F /* main.m in Sources */,
+				309C285F1C8F0A1D0094AC5F /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		30125E261C8FD7630051122A /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				30125E271C8FD7630051122A /* en */,
+				30125E281C8FD7630051122A /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		309C284F1C8F09850094AC5F /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				309C28501C8F09850094AC5F /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		309C28361C8F07450094AC5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		309C28371C8F07450094AC5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		309C28391C8F07450094AC5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = OpenHeInput/AppFiles/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_BUNDLE_IDENTIFIER = net.HeZi.MacOS.inputmethod.OpenHeInput;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		309C283A1C8F07450094AC5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = OpenHeInput/AppFiles/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_BUNDLE_IDENTIFIER = net.HeZi.MacOS.inputmethod.OpenHeInput;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		309C28221C8F07450094AC5F /* Build configuration list for PBXProject "OpenHeInput" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				309C28361C8F07450094AC5F /* Debug */,
+				309C28371C8F07450094AC5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		309C28381C8F07450094AC5F /* Build configuration list for PBXNativeTarget "OpenHeInput" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				309C28391C8F07450094AC5F /* Debug */,
+				309C283A1C8F07450094AC5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 309C281F1C8F07450094AC5F /* Project object */;
+}
