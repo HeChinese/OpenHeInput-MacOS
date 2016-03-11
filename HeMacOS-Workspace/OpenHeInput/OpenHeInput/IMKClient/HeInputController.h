@@ -44,6 +44,7 @@
 
 @property (strong, nonatomic) NSString *typedString;
 
+- (void)heCommitComposition:(id)sender;
 - (void)displayTypedString:(id)sender;
 
 - (void)heChangePage;

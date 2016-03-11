@@ -42,7 +42,7 @@
         }
         else  // 11...55, 6, 7 8 9
         {
-            [self commitComposition:currentClient];
+            [self heCommitComposition:currentClient];
         }
     }
     
@@ -76,8 +76,8 @@
             break;
         case CandidateArrayEmpty:
         {
-            [self hideIMKCandidates];
-            [self clearState];
+            //[self hideIMKCandidates];
+            //[self clearState];
             bRet = true;
         }
             break;
@@ -158,9 +158,7 @@
             }
             else if(![dataServer isStateClean])
             {
-                [self commitComposition:currentClient];
-                [self hideIMKCandidates];
-                [self clearState];
+                [self heCommitComposition:currentClient];
                 bRet = true;
             }
             else
@@ -204,9 +202,7 @@
             }
             else if (![dataServer isStateClean])
             {
-                [self commitComposition:currentClient];
-                [self hideIMKCandidates];
-                [self clearState];
+                [self heCommitComposition:currentClient];
                 
                 //pTypingState->lianXiangStrLen=1;
                 //pTypingState->lianXiangStr[0] = L'和';
@@ -402,10 +398,7 @@
     
     if(bRet) {
         if  ([dataServer isInputable]) {
-            [self commitComposition:currentClient];
-            
-            [self hideIMKCandidates];
-            [self clearState];
+            [self heCommitComposition:currentClient];
         }
         
         [currentClient insertText:newString replacementRange:NSMakeRange(NSNotFound, NSNotFound)];

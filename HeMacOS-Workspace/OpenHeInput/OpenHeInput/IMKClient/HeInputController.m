@@ -76,15 +76,12 @@
         else if ( dataServer.setting.currentKeyMode != EnglishMode)
         {
             dataServer.setting.mainKeyboardMode = EnglishMode;
-            // this line cause problem with selection using shift + arrow key
             [self hideIMKCandidates];
             [self clearState];
             return false;
         }
         else
         {
-            //[self hideIMKCandidates];
-            //[self clearState];
             return false;
         }
     }
@@ -366,7 +363,16 @@
  @abstract   Called to inform the controller that the composition should be committed.
  @discussion If an input method implements this method it will be called when the client wishes to end the composition session immediately. A typical response would be to call the client's insertText method and then clean up any per-session buffers and variables.  After receiving this message an input method should consider the given composition session finished.
  */
-- (void)commitComposition:(id)sender
+//- (void)commitComposition:(id)sender
+//{
+//    [dataServer clearState];
+//    [currentClient setMarkedText:@"" selectionRange:NSMakeRange(0, 0) replacementRange:NSMakeRange(NSNotFound, NSNotFound)];
+//}
+
+// When commit text by space key
+// or by continue typing
+// or by repeat tying from menu
+- (void)heCommitComposition:(id)sender
 {
     if (dataServer.numOfCand == 0 || ![dataServer isInputable])
         return;
@@ -375,35 +381,13 @@
     // however if it is menu, it can't come to here
     ZiCiObject *ziCiObj = [dataServer.candidateArray objectAtIndex:pageIndex*maxItemsOfPage + itemIndexOfCurrentPage];
     
-    if ( ziCiObj.ziCi == nil || [ziCiObj.ziCi length] == 0 ) {
-        return;
-    }
-    
     [sender insertText:ziCiObj.ziCi replacementRange:NSMakeRange(NSNotFound, NSNotFound)];
     previousInsertText = [NSString stringWithString: ziCiObj.ziCi];
-}
-
-- (void)candidateSelectionChanged:(NSAttributedString*)candidateString
-{
-    if (!dataServer.setting.bPinYinPrompt)
-        return;
     
-    if ( dataServer.setting.currentKeyMode == HeMaMode
-        || dataServer.setting.currentKeyMode == PinYinMode ) {
-        
-        NSMutableString* text = [NSMutableString stringWithString:[candidateString string]];
-        
-        NSString *pinYinString = [dataServer getPinYinPromptString:[text substringToIndex:1]];
-        
-        if([pinYinString length]>0)
-        {
-            extern IMKCandidates *imkCandidates;
-            
-            NSFont *font = [NSFont fontWithName:@"Palatino-Roman" size:16.0];
-            NSDictionary *attrsDictionary = [NSDictionary dictionaryWithObject:font forKey:NSFontAttributeName];
-            
-            [imkCandidates showAnnotation:[[NSAttributedString alloc] initWithString:pinYinString attributes:attrsDictionary]];
-        }
+    [self clearState];
+    extern IMKCandidates* imkCandidates;
+    if ( imkCandidates ) {
+        [imkCandidates hide];
     }
 }
 
@@ -412,6 +396,7 @@
  @abstract   Called when a new candidate has been finally selected.
  @discussion The candidate parameter is the users final choice from the candidate window. The candidate window will have been closed before this method is called.
  */
+// When return key event pass out to InputMethod Kit (retrun false by handleEvnet function)
 // InputMethod Kit Client function for return key
 - (void)candidateSelected:(NSAttributedString*)candidateString
 {
@@ -495,6 +480,30 @@
     }
     
     return theCandidates;
+}
+
+- (void)candidateSelectionChanged:(NSAttributedString*)candidateString
+{
+    if (!dataServer.setting.bPinYinPrompt)
+        return;
+    
+    if ( dataServer.setting.currentKeyMode == HeMaMode
+        || dataServer.setting.currentKeyMode == PinYinMode ) {
+        
+        NSMutableString* text = [NSMutableString stringWithString:[candidateString string]];
+        
+        NSString *pinYinString = [dataServer getPinYinPromptString:[text substringToIndex:1]];
+        
+        if([pinYinString length]>0)
+        {
+            extern IMKCandidates *imkCandidates;
+            
+            NSFont *font = [NSFont fontWithName:@"Palatino-Roman" size:16.0];
+            NSDictionary *attrsDictionary = [NSDictionary dictionaryWithObject:font forKey:NSFontAttributeName];
+            
+            [imkCandidates showAnnotation:[[NSAttributedString alloc] initWithString:pinYinString attributes:attrsDictionary]];
+        }
+    }
 }
 
 - (void)heChangePage
