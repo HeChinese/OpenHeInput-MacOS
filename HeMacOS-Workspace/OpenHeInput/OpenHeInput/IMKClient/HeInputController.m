@@ -54,7 +54,7 @@
     NSUInteger cocoaModifiers = [event modifierFlags];
     NSInteger virtualKeyCode = [event keyCode];
     
-    BOOL is26EnglisKey = false;
+    BOOL is26EnglisKey = [Globel_Helper is26EnglishCharKey:virtualKeyCode];
     BOOL isPunctuationKey = [Globel_Helper isPunctuationKey:virtualKeyCode];
     BOOL isMainKeyboardNumberKey = [Globel_Helper isMainKeyboardNumberKey: virtualKeyCode];
     BOOL isMainKeyboardControlKey = [Globel_Helper isMainKeyboardControlKey:virtualKeyCode];
@@ -70,17 +70,23 @@
     
     if (isWithShiftKey) {
         
-        if (isPunctuationKey || isMainKeyboardNumberKey) {
-            // go through
-        }
-        else if ( dataServer.setting.currentKeyMode != EnglishMode)
+        if ( dataServer.setting.mainKeyboardMode != EnglishMode)
         {
-            dataServer.setting.mainKeyboardMode = EnglishMode;
-            [self hideIMKCandidates];
-            [self clearState];
-            return false;
+            if (is26EnglisKey || virtualKeyCode == kVK_Space ) {
+                dataServer.setting.mainKeyboardMode = EnglishMode;
+                [self hideIMKCandidates];
+                [self clearState];
+ 
+                [currentClient setMarkedText:@"英文" selectionRange:NSMakeRange(0, 0) replacementRange:NSMakeRange(NSNotFound, NSNotFound)];
+                return true;
+            }
+            else if (isPunctuationKey || isMainKeyboardNumberKey)
+            {
+                // since punctuationKey + shift at HeMaMode, need to insert Chinese Punctuation
+                // Go through
+            }
         }
-        else
+        else // others should not process
         {
             return false;
         }
