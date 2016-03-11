@@ -67,9 +67,10 @@ a: 开启或 关闭拼音提示(annotation)；
 # 四、和码资料
 有关和码汉字字形技术，和码输入法的学习资料，可查看：
 
-1、和码线上书：《和码》线上书(Online Book)
+1、和码线上书：http://www.hezi.net/He/UserGuide/zh-Hans/Set/BookCover.html
 
-2、和码简明教程：《和码》简明教程
+2、和码简明教程：http://www.hezi.net/He/UserGuide_Concise/zh-Hans/Set/HeChinese_Guide_Concise.htm
 
-3、和码在Android/iPad/iPhone上的练习与输入软件：《和码》软件
+3、和码在Android/iPad/iPhone上的练习与输入软件：http://www.hezi.net/he/HTML/HeChinese_Download.html
+
 
