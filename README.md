@@ -92,29 +92,33 @@ create table HanZi_PinYin
 
 Aftet geting source from here, then:
 
-1、Run XCode, open HeMacOS-Workspace.xcworkspace;
+1. Run XCode, open HeMacOS-Workspace.xcworkspace;
 
-2、Select OpenHeInput project --> OpenHeInput target;
+2. Select OpenHeInput project --> OpenHeInput target;
 
-3、Build;
+3. Build;
 
-4、Select OpenHeInput-->Products-->OpenHeInput.app, right click to show in Finder,
+4. Select OpenHeInput-->Products-->OpenHeInput.app, right click to show in Finder,
 
-5、Copy OpenHeInput.app to /Library/Input Methods/ folder，then Log out, and Log in again；
+5. Copy OpenHeInput.app to /Library/Input Methods/ folder，then Log out, and Log in again；
 
-After installation, take following steps for setting: 
+6. Open Mac OS X System Preferences;
 
-1. Open Mac OS X System Preferences;
+7. Select Keyboard --> Input Source; 
 
-2. Select Keyboard --> Input Source; 
+8 . Click ' + ' Sign at bottom left;
 
-3. Click ' + ' Sign at bottom left;
+9.  Select Simplified Chinese;
 
-4. Select Simplified Chinese;
+10. Select one or more OpenHeInput methods: Chinese Simplified, Chinese Traditional, HeEnglish; 
 
-5. Select one or more OpenHeInput methods: Chinese Simplified, Chinese Traditional, HeEnglish; 
+11. Then click 'Add' button.
 
-6. Then click 'Add' button.
+OpenHeInput.app can be download from AppStore:</br>
+(waiting for review)</br>
+Or download from: http://www.hezi.net/forum/?g=posts&t=40</br>
+Then follow steps from 5 to complete install and setting.
+
 # How to use OpenHeInput application
 
 1. Shift + Space (or character): switch to English input;
@@ -123,17 +127,19 @@ After installation, take following steps for setting:
 
 3. 0(M) to display function menu, and select from menu;
 
-4. fn + j, s: switch to Chinese simplified mode;
+4. fn + character to switch input mode:
 
-5. fn + f, t: switch to Traditional Chinese mode;
+fn + j, s: switch to Chinese simplified mode;
 
-6. fn + p: switch to PinYin mode;
+fn + f, t: switch to Traditional Chinese mode;
 
-7. fn + e: switch to HeEnglish mode;
+fn + p: switch to PinYin mode;
 
-8. fn + r: switch to reset mode;
+fn + e: switch to HeEnglish mode;
 
-9. fn + a: turn Off/On pinyin prompt. 
+fn + r: switch to reset mode;
+
+fn + a: turn Off/On pinyin prompt. 
 
 # More Information about HeInput
 1. http://www.hezi.net/He/UserGuide/zh-Hans/Set/BookCover.html
