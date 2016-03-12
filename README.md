@@ -1,11 +1,146 @@
-# OpenHeInput-MacOS-Objective-C
-Open source HeInput project for Mac OS X using Objective C
+# OpenHeInput Project
+Open source HeInput project for Mac OS X is based on Mac OS X 10.5 Input Method Kit Framework, using Objective-C。
+
+It is full functional Chinese Input application, target to Mac OS X 10.9+.
+
+This application is also available in App Store:
+
+# Application Structure
+
+Created with XCode 7.2.1, using Objective C.
+
+Project Name: HeChinese, 
+
+include 3 modules:
+
+1. Static Library: HeLibrary; 
+2. Static Library: HeInputLibrary; 
+3. Application: OpenHeInput. 
+
+The main parts of code are:
+
+1. HeInputController class, which is inherited from IMKInputController, handles key events, abtains candidates from data server, and sends selected words to client (application);
+2. Input_DataServer process key input and provide cadidates;
+   1. HeInput_DataServer includes EngineCollection;
+   2. EngineCollection includes HeMaEngine, PinYinEngine, HeEnglishEngine, etc;
+   3. Each Engine access SQLite database;
+
+# Database Structure
+
+Include a SQLite database: hema_db.sqlite, it includes tables:
+
+create table HanZi
+(
+--_id INTEGER PRIMARY KEY,
+HanZi text,	
+M1 numeric,
+M2 numeric,
+M3 numeric,
+M4 numeric,
+GBOrder numeric,
+B5Order numeric
+);
+
+create table CiZu
+(
+--_id INTEGER PRIMARY KEY,
+CiZu text,	
+M1 numeric,
+M2 numeric,
+M3 numeric,
+M4 numeric,
+HeMaOrder numeric,
+JianFan numeric
+);
+
+create table English_Word
+(
+--_id INTEGER PRIMARY KEY,
+word text,	
+HeMaOrder numeric
+);
+
+create table PinYin_Number
+(
+--_id INTEGER PRIMARY KEY,
+PinYin text,
+number numeric
+);
+
+create table PinYin_HanZi
+(
+--_id INTEGER PRIMARY KEY,
+PinYin text,	
+HanZiString text
+);
+
+create table HanZi_PinYin
+(
+--_id INTEGER PRIMARY KEY,
+HanZi text,	
+PinYin text,
+ShengDiao numeric
+);
 
 # Compile and Install
 
+1、Run XCode, then open HeMacOS-Workspace.xcworkspace;
+
+2、Select OpenHeInput project --> OpenHeInput target;
+
+3、Build;
+
+4、Select OpenHeInput-->Products-->OpenHeInput.app, right click to show in Finder,
+
+5、Copy OpenHeInput.app to /Library/Input Methods/ folder，then Log out, and Log in again；
+
+After installation, take following steps for setting: 
+
+1. Open Mac OS X System Preferences;
+
+2. Select Keyboard;
+
+3. Select Input Source; 
+
+4. Click ' + ' Sign at bottom left;
+
+5. Select Simplified Chinese;
+
+6. Select one or more HeInput methods; 
+
+7. Then click 'Add' button
 # OpenHeInput Usage
 
-# More Information
+HeInput software’ usage:
+
+1. HeInput install three input mode: Chinese Simplified, Chinese Traditional, and HeEnglish;
+
+2. Can use main keyboard and number pad;
+
+3. Includes 21,000 words, and 180,000 phrases.
+
+4. Shift + Space (or character): switch to English input;
+
+5. fn + Space: switch Chinese or PinYin, or HeEnglish input mode;
+
+6. 0(M) to display function menu, and select from menu;
+
+7. fn + j, s: switch to Chinese simplified mode;
+
+8. fn + f, t: switch to Traditional Chinese mode;
+
+9. fn + p: switch to PinYin mode;
+
+10. fn + e: switch to HeEnglish mode;
+
+11. fn + r: switch to reset mode;
+
+12. fn + a: turn Off/On pinyin prompt. 
+
+# More Information about HeInput
+1. http://www.hezi.net/He/UserGuide/zh-Hans/Set/BookCover.html
+
+2. http://www.hezi.net/He/UserGuide_Concise/zh-Hans/Set/HeChinese_Guide_Concise.htm
 
 
 # 一、苹果电脑系统(Mac OS X 10.9+)，开源和码输入程序与数据库
