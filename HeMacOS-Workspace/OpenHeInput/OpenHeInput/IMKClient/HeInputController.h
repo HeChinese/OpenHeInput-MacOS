@@ -20,7 +20,6 @@
 #import "HeInputLibrary/Input_Setting.h"
 #import "HeInputLibrary/Globel_Helper.h"
 
-
 @interface HeInputController : IMKInputController {
     
     id currentClient;
@@ -51,5 +50,5 @@
 - (void)heRefrechPage;
 - (void)clearState;
 //- (void)simulateEnterKeyEvent;
-- (void)hideIMKCandidates;
+- (void)wipeTyping;
 @end

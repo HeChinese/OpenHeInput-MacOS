@@ -74,9 +74,12 @@
         {
             if (is26EnglisKey || virtualKeyCode == kVK_Space ) {
                 dataServer.setting.mainKeyboardMode = EnglishMode;
-                [self hideIMKCandidates];
+  
                 [self clearState];
- 
+                extern IMKCandidates* imkCandidates;
+                if ( imkCandidates ) {
+                    [imkCandidates hide];
+                }
                 [currentClient setMarkedText:@"英文" selectionRange:NSMakeRange(0, 0) replacementRange:NSMakeRange(NSNotFound, NSNotFound)];
                 return true;
             }
@@ -86,10 +89,7 @@
                 // Go through
             }
         }
-        else // others should not process
-        {
-            return false;
-        }
+        return false;
     }
     else if (virtualKeyCode == kVK_ANSI_KeypadDivide) {
         if (dataServer.setting.numPadMode != NumberMode)
@@ -100,8 +100,7 @@
         {
             dataServer.setting.numPadMode = HeMaMode;
         }
-        [self hideIMKCandidates];
-        [self clearState];
+        [self wipeTyping];
         return true;
     }
     
@@ -151,7 +150,7 @@
             return [self quickModeChange:uniChar];
     }
     
-    if ((is26EnglisKey = [Globel_Helper is26EnglishCharKey:virtualKeyCode]) ||
+    if (is26EnglisKey ||
         isPunctuationKey ||
         (isMainKeyboardNumberKey && isWithShiftKey) ||
         isMainKeyboardControlKey)
@@ -353,8 +352,7 @@
         dataServer.setting.numPadMode = HeMaMode;
         dataServer.setting.bSimplified_Chinese = true;
     }
-    [self hideIMKCandidates];
-    [self clearState];
+    [self wipeTyping];
 }
 
 // Display typed string at cursor
@@ -573,8 +571,9 @@
 //    CFRelease(keyup);
 //}
 
-- (void)hideIMKCandidates;
+- (void)wipeTyping;
 {
+    [self clearState];
     extern IMKCandidates* imkCandidates;
     if ( imkCandidates ) {
         [imkCandidates hide];

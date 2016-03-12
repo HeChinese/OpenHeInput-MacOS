@@ -90,20 +90,21 @@
         case MenuSelected_Repeat:
             
             [currentClient insertText:previousInsertText replacementRange:NSMakeRange(NSNotFound, NSNotFound)];
-            [self hideIMKCandidates];
             [self clearState];
+            extern IMKCandidates* imkCandidates;
+            if ( imkCandidates ) {
+                [imkCandidates hide];
+            }
             bRet = true;
             break;
         case MenuSelected_InputMode_Changed:
             [dataServer setMenuArray];
-            [self hideIMKCandidates];
-            [self clearState];
+            [self wipeTyping];
             bRet = true;
             break;
         case MenuSelected_MenuArray_NeedUpdate:
             [dataServer setMenuArray];
-            [self hideIMKCandidates];
-            [self clearState];
+            [self wipeTyping];
             bRet = true;
             break;
         case MenuSelected_PleaseSaveSetting:
