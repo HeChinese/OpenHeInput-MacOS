@@ -80,7 +80,8 @@
                 if ( imkCandidates ) {
                     [imkCandidates hide];
                 }
-                [currentClient setMarkedText:@"英文" selectionRange:NSMakeRange(0, 0) replacementRange:NSMakeRange(NSNotFound, NSNotFound)];
+                [currentClient setMarkedText:@"" selectionRange:NSMakeRange(0, 0) replacementRange:NSMakeRange(NSNotFound, NSNotFound)];
+                //[currentClient setMarkedText:@"英文" selectionRange:NSMakeRange(0, 0) replacementRange:NSMakeRange(NSNotFound, NSNotFound)];
                 return true;
             }
             else if (isPunctuationKey || isMainKeyboardNumberKey)
