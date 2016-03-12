@@ -106,7 +106,7 @@ Aftet geting source from here, then:
 
 7. Select Keyboard --> Input Source; 
 
-8 . Click ' + ' Sign at bottom left;
+8. Click ' + ' Sign at bottom left;
 
 9.  Select Simplified Chinese;
 
