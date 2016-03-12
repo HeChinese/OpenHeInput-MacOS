@@ -76,8 +76,8 @@
             break;
         case CandidateArrayEmpty:
         {
-            //[self hideIMKCandidates];
-            //[self clearState];
+            //When type backspace to 0
+            [self wipeTyping];
             bRet = true;
         }
             break;
