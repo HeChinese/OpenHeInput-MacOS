@@ -1,17 +1,23 @@
 # OpenHeInput Project
-Open source HeInput project for Mac OS X is based on Mac OS X 10.5 Input Method Kit Framework, using Objective-C。
+Open source HeInput project for Mac OS X is based on Mac OS X 10.5 Input Method Kit Framework, started from learning Apple's NumberInput_IMKit_Sample: 
+https://developer.apple.com/library/mac/samplecode/NumberInput_IMKit_Sample/Introduction/Intro.html
 
-It is full functional Chinese Input application, target to Mac OS X 10.9+.
+Now it is fully functional Chinese Input application, target to Mac OS X 10.9+, has features:
+
+1. Has 3 input modes: Chinese Simplified, Chines traditional, HeEngligh;
+2. Use main keyboard or number pad to input;
+3. Includes 21,000 Chinese words, 180,000 phrases.
 
 This application is also available in App Store:
+(waiting for review)
 
 # Application Structure
 
 Created with XCode 7.2.1, using Objective C.
 
-Project Name: HeChinese, 
+Workspace: HeMacOS-Workspace 
 
-include 3 modules:
+Include 3 modules:
 
 1. Static Library: HeLibrary; 
 2. Static Library: HeInputLibrary; 
@@ -30,61 +36,63 @@ The main parts of code are:
 Include a SQLite database: hema_db.sqlite, it includes tables:
 
 create table HanZi
-(
---_id INTEGER PRIMARY KEY,
-HanZi text,	
-M1 numeric,
-M2 numeric,
-M3 numeric,
-M4 numeric,
-GBOrder numeric,
-B5Order numeric
-);
+</br>(
+</br>--_id INTEGER PRIMARY KEY,
+</br>HanZi text,	
+</br>M1 numeric,
+</br>M2 numeric,
+</br>M3 numeric,
+</br>M4 numeric,
+</br>GBOrder numeric,
+</br>B5Order numeric
+</br>);
 
 create table CiZu
-(
---_id INTEGER PRIMARY KEY,
-CiZu text,	
-M1 numeric,
-M2 numeric,
-M3 numeric,
-M4 numeric,
-HeMaOrder numeric,
-JianFan numeric
-);
+</br>(
+</br>--_id INTEGER PRIMARY KEY,
+</br>CiZu text,	
+</br>M1 numeric,
+</br>M2 numeric,
+</br>M3 numeric,
+</br>M4 numeric,
+</br>HeMaOrder numeric,
+</br>JianFan numeric
+</br>);
 
 create table English_Word
-(
---_id INTEGER PRIMARY KEY,
-word text,	
-HeMaOrder numeric
-);
+</br>(
+</br>--_id INTEGER PRIMARY KEY,
+</br>word text,	
+</br>HeMaOrder numeric
+</br>);
 
 create table PinYin_Number
-(
---_id INTEGER PRIMARY KEY,
-PinYin text,
-number numeric
-);
+</br>(
+</br>--_id INTEGER PRIMARY KEY,
+</br>PinYin text,
+</br>number numeric
+</br>);
 
 create table PinYin_HanZi
-(
---_id INTEGER PRIMARY KEY,
-PinYin text,	
-HanZiString text
-);
+</br>(
+</br>--_id INTEGER PRIMARY KEY,
+</br>PinYin text,	
+</br>HanZiString text
+</br>);
 
 create table HanZi_PinYin
-(
---_id INTEGER PRIMARY KEY,
-HanZi text,	
-PinYin text,
-ShengDiao numeric
-);
+</br>(
+</br>--_id INTEGER PRIMARY KEY,
+</br>HanZi text,	
+</br>PinYin text,
+</br>ShengDiao numeric
+</br>);
 
 # Compile and Install
 
-1、Run XCode, then open HeMacOS-Workspace.xcworkspace;
+Aftet geting source from here, then:
+
+1、Run XCode, open HeMacOS-Workspace.xcworkspace;
 
 2、Select OpenHeInput project --> OpenHeInput target;
 
@@ -98,44 +106,34 @@ After installation, take following steps for setting:
 
 1. Open Mac OS X System Preferences;
 
-2. Select Keyboard;
+2. Select Keyboard --> Input Source; 
 
-3. Select Input Source; 
+3. Click ' + ' Sign at bottom left;
 
-4. Click ' + ' Sign at bottom left;
+4. Select Simplified Chinese;
 
-5. Select Simplified Chinese;
+5. Select one or more OpenHeInput methods: Chinese Simplified, Chinese Traditional, HeEnglish; 
 
-6. Select one or more HeInput methods; 
+6. Then click 'Add' button.
+# How to use OpenHeInput application
 
-7. Then click 'Add' button
-# OpenHeInput Usage
+1. Shift + Space (or character): switch to English input;
 
-HeInput software’ usage:
+2. fn + Space: switch Chinese or PinYin, or HeEnglish input mode;
 
-1. HeInput install three input mode: Chinese Simplified, Chinese Traditional, and HeEnglish;
+3. 0(M) to display function menu, and select from menu;
 
-2. Can use main keyboard and number pad;
+4. fn + j, s: switch to Chinese simplified mode;
 
-3. Includes 21,000 words, and 180,000 phrases.
+5. fn + f, t: switch to Traditional Chinese mode;
 
-4. Shift + Space (or character): switch to English input;
+6. fn + p: switch to PinYin mode;
 
-5. fn + Space: switch Chinese or PinYin, or HeEnglish input mode;
+7. fn + e: switch to HeEnglish mode;
 
-6. 0(M) to display function menu, and select from menu;
+8. fn + r: switch to reset mode;
 
-7. fn + j, s: switch to Chinese simplified mode;
-
-8. fn + f, t: switch to Traditional Chinese mode;
-
-9. fn + p: switch to PinYin mode;
-
-10. fn + e: switch to HeEnglish mode;
-
-11. fn + r: switch to reset mode;
-
-12. fn + a: turn Off/On pinyin prompt. 
+9. fn + a: turn Off/On pinyin prompt. 
 
 # More Information about HeInput
 1. http://www.hezi.net/He/UserGuide/zh-Hans/Set/BookCover.html
@@ -143,10 +141,18 @@ HeInput software’ usage:
 2. http://www.hezi.net/He/UserGuide_Concise/zh-Hans/Set/HeChinese_Guide_Concise.htm
 
 
-# 一、苹果电脑系统(Mac OS X 10.9+)，开源和码输入程序与数据库
-苹果电脑上，和码输入程序是基于Mac OS X 10.5 引入的Input Method Kit Framework制作的，编程语言是Objective-C。
+# 一、开源和码输入程序与数据库
+苹果电脑上，和码输入程序是基于Mac OS X 10.5 引入的Input Method Kit Framework制作的，程序开始于学习 Apple's NumberInput_IMKit_Sample: 
+https://developer.apple.com/library/mac/samplecode/NumberInput_IMKit_Sample/Introduction/Intro.html。
+
+现在是一款完整的和码汉字字形输入软件，有以下输入功能：
+
+1、有三种输入选择：简体汉字(Chinese Simplified)、繁体汉字(Chinese Traditional)，和码英文(HeEnglish)；
+2、可用电脑大键盘，与数字小键盘输入；
+3、包含21,000多个单字, 180,000多条词组。
+
 # 二、程序编译与安装
-Mac苹果电脑和码输入软件，是用XCode 7.2.1开发编译的。获取程序后，可用以下步骤编译与安装OpenHeInput：
+Mac苹果电脑和码开源输入软件，是用XCode 7.2.1开发编译的。获取程序后，可用以下步骤编译与安装OpenHeInput：
 
 1、用XCode打开HeMacOS-Workspace.xcworkspace;
 
@@ -158,46 +164,38 @@ Mac苹果电脑和码输入软件，是用XCode 7.2.1开发编译的。获取程
 
 5、将OpenHeInput.app文件，拷贝到Mac个人用户的　/Library/Input Methods/ 目录下，然后Log out（退出登录），再登录Log in；
 
-6、打开Mac的System Preferences（系统设置）--> Keyboard（键盘）--> Input Source（输入速度）--> Chinese Simplified（简体汉字）；
+6、打开Mac的System Preferences（系统设置）--> Keyboard（键盘）--> Input Source（输入程序）--> Chinese Simplified（简体汉字）；
 
-7、选择HeInput Simplified（和码简体）, HeInput Traditional（和码繁体）, 或HeEnglish（和码英文）, 任何一种输入方式；
+7、选择HeInput Simplified（和码简体）, HeInput Traditional（和码繁体）, 或HeEnglish（和码英文）, 任选一种输入方式；
 
-8、打开应用软件，在输入法列表中，调用和码输入法，就可以用和码输入了。
-# 三、Mac电脑上和码输入法的使用方法
+8、打开应用软件，在屏幕北方的输入法列表中，调用和码输入法，就可以用和码输入了。
 
-也以下网页下载：http://www.hezi.net/forum/?g=posts&t=40
+OpenHeInput.app软件也可以从AppStore下载：
+（现在审测）
+还可以在以下网页下载：http://www.hezi.net/forum/?g=posts&t=40
+再从上述第5步开始进行安装与设置。
 
-和码OpenHeInput2.0的主要功能有：
-
-1、和码输入法安装了三种初选输入方式：简体输入、繁体输入、HeEnglish输入，安装时可选其中一种或几种；
-
-2、大键盘与小键盘都可以输入，两种键盘的输入方式可以分开设置，如(大键盘英文输入，小键盘中文输入)，或(大键盘输入中文，小键盘输入数字)。
-
-3、能输入2万1千多个单字(简繁体)，18万余条词组。
-
-输入模式的切换方式：
+# 三、Mac电脑上和码输入软件的使用方法
 
 1、Shift + Space(Character): 切换到纯英文输入方式；
 
 2、fn + Space: 切换到汉字或拼音输入方式，或和码英文输入方式；
 
-3、输入模式转换也可以通过输入码0(M)，软件显示功能目录，再选择目录项；
+3、输入码0(M)，软件显示功能目录，再选择目录项；
 
 4、fn + 字母键进行输入方式转换，如：
 
-fn + 字母代表的功能：
+fn + e: 转为HeEnglish输入模式(english)；
 
-e: 转为HeEnglish输入模式(english)；
+fn + j, s: 简体字输入(jianTi, simplified Chinese);
 
-j, s: 简体字输入(jianTi, simplified Chinese);
+fn + f, t: 繁体字输入(fanTi, traditional Chinese);
 
-f, f: 繁体字输入(fanTi, traditional Chinese);
+fn + p: 拼音单字输入(拼音查码)(pinYin);
 
-p: 拼音单字输入(拼音查码)(pinYin);
+fn + r: 回复到初始设定(reset)；
 
-r: 回复到初始设定(reset)；
-
-a: 开启或 关闭拼音提示(annotation)；
+fn + a: 开启或 关闭拼音提示(annotation)；
 
 # 四、和码资料
 有关和码汉字字形技术，和码输入法的学习资料，可查看：
@@ -207,5 +205,3 @@ a: 开启或 关闭拼音提示(annotation)；
 2、和码简明教程：http://www.hezi.net/He/UserGuide_Concise/zh-Hans/Set/HeChinese_Guide_Concise.htm
 
 3、和码在Android/iPad/iPhone上的练习与输入软件：http://www.hezi.net/he/HTML/HeChinese_Download.html
-
-
