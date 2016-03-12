@@ -147,9 +147,12 @@ https://developer.apple.com/library/mac/samplecode/NumberInput_IMKit_Sample/Intr
 
 现在是一款完整的和码汉字字形输入软件，有以下输入功能：
 
-1、有三种输入选择：简体汉字(Chinese Simplified)、繁体汉字(Chinese Traditional)，和码英文(HeEnglish)；
-2、可用电脑大键盘，与数字小键盘输入；
+1、有三种输入选择：简体汉字(Chinese Simplified)、繁体汉字(Chinese Traditional)，和码英文(HeEnglish)；</br>
+2、可用电脑大键盘，与数字小键盘输入；</br>
 3、包含21,000多个单字, 180,000多条词组。
+
+和码输入软件还可以从AppStore下载：
+（等待审查）
 
 # 二、程序编译与安装
 Mac苹果电脑和码开源输入软件，是用XCode 7.2.1开发编译的。获取程序后，可用以下步骤编译与安装OpenHeInput：
@@ -170,10 +173,10 @@ Mac苹果电脑和码开源输入软件，是用XCode 7.2.1开发编译的。获
 
 8、打开应用软件，在屏幕北方的输入法列表中，调用和码输入法，就可以用和码输入了。
 
-OpenHeInput.app软件也可以从AppStore下载：
-（现在审测）
-还可以在以下网页下载：http://www.hezi.net/forum/?g=posts&t=40
-再从上述第5步开始进行安装与设置。
+OpenHeInput.app软件也可以从AppStore下载：</br>
+（现在审测）</br>
+还可以在以下网页下载：http://www.hezi.net/forum/?g=posts&t=40</br>
+再从上述第5步开始进行安装与设置。</br>
 
 # 三、Mac电脑上和码输入软件的使用方法
 
