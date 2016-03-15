@@ -112,7 +112,13 @@ Aftet geting source from here, then:
 
 10. Select one or more OpenHeInput methods: Chinese Simplified, Chinese Traditional, HeEnglish; 
 
-11. Then click 'Add' button.
+11. Then click 'Add' button;
+
+12. Run an application which requires Chinese input;
+
+13. Select HeInput method by click language icon on screen's top right corner;
+
+14. Then type in Chinese.
 
 OpenHeInput.app can be download from AppStore:</br>
 (waiting for review)</br>
