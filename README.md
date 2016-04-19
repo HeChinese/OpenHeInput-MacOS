@@ -1,5 +1,12 @@
 # OpenHeInput Project
-Open source HeInput project for Mac OS X is based on Mac OS X 10.5 Input Method Kit Framework, started from learning Apple's NumberInput_IMKit_Sample: 
+
+'He' is Chinese word 和's PinYin(Sound), it means 'and' or 'with'.
+
+'HeInput'('和码' in Chinese) is a name of famous Chinese input mathod. 
+
+OpenHeInput-MacOS is open source HeInput project for Mac OS X.
+
+This project is based on Mac OS X 10.5 Input Method Kit Framework, started from Apple's NumberInput_IMKit_Sample: 
 https://developer.apple.com/library/mac/samplecode/NumberInput_IMKit_Sample/Introduction/Intro.html
 
 Now it is fully functional Chinese Input application, target to Mac OS X 10.9+, has features:
