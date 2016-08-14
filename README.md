@@ -15,8 +15,7 @@ Now it is fully functional Chinese Input application, target to Mac OS X 10.9+, 
 2. Use main keyboard or number pad to input;
 3. Includes 21,000 Chinese words, 180,000 phrases.
 
-This application is also available in App Store:
-(waiting for review)
+Currently Apple does not allow third party Input method application in App Store, so if you want use HeInput in MacOS, you need make it youself by following steps in section "Compile and Install".
 
 # Application Structure
 
@@ -127,11 +126,6 @@ Aftet geting source from here, then:
 
 14. Then type in Chinese.
 
-OpenHeInput.app can be download from AppStore:</br>
-(waiting for review)</br>
-Or download from: http://www.hezi.net/forum/?g=posts&t=40</br>
-Then follow steps from 5 to complete install and setting.
-
 # How to use OpenHeInput application
 
 1. Shift + Space (or character): switch to English input;
@@ -192,10 +186,8 @@ Mac苹果电脑和码开源输入软件，是用XCode 7.2.1开发编译的。获
 
 8、打开应用软件，在屏幕北方的输入法列表中，调用和码输入法，就可以用和码输入了。
 
-OpenHeInput.app软件也可以从AppStore下载：</br>
-（现在审测）</br>
-还可以在以下网页下载：http://www.hezi.net/forum/?g=posts&t=40</br>
-再从上述第5步开始进行安装与设置。</br>
+目前，苹果系统不充许第三方输入软件发布到苹果软件店(AppStore)，使得想用和码输入软件朋友，就只好按上述步骤自己编译安装了。
+
 
 # 三、Mac电脑上和码输入软件的使用方法
 
